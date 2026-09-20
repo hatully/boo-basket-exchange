@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boo Card Mockup</title>
+<style>
+:root{
+  --bg:#f7c8d8; --panel:#fff8e8; --ink:#5a3a2e; --title:#ff8a5c;
+  --accent:#8b7bf7; --accent2:#5cc9a7; --pink:#ff6b9d; --yellow:#ffd76e;
+  --chip:#ffe9f2; --chipink:#d63384; --shadow:#c9a0b8;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#241a33; --panel:#3a2d4d; --ink:#f3e9ff; --title:#5a3a8e;
+  --accent:#8b7bf7; --accent2:#4db892; --pink:#ff6b9d; --yellow:#ffd76e;
+  --chip:#4a3a66; --chipink:#ffb3d1; --shadow:#140d20;
+}}
+*{margin:0;box-sizing:border-box}
+body{background:var(--bg);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
+  font-family:'Courier New',monospace;transition:background .4s}
+.win{max-width:400px;width:100%;background:var(--panel);border:3px solid var(--ink);border-radius:18px;
+  box-shadow:8px 8px 0 var(--shadow);overflow:hidden}
+.bar{background:var(--title);padding:10px 14px;display:flex;align-items:center;gap:8px}
+.bar .dots{display:flex;gap:6px}
+.dot{width:12px;height:12px;border-radius:50%;border:2px solid rgba(0,0,0,.35)}
+.dot.p{background:var(--pink)} .dot.y{background:var(--yellow)} .dot.g{background:var(--accent2)}
+.bar .t{color:#fff;font-weight:bold;font-size:13px;letter-spacing:1px;margin-left:4px}
+.inner{padding:24px 22px}
+.eyebrow{text-align:center;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);font-weight:bold;margin-bottom:14px}
+.name{background:var(--chip);border:2px dashed var(--accent);border-radius:14px;padding:16px;text-align:center;margin-bottom:18px}
+.name .lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--chipink);font-weight:bold;margin-bottom:4px}
+.name .who{font-size:24px;font-weight:bold;color:var(--ink)}
+.sec{margin-bottom:16px}
+.sec .lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);font-weight:bold;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--chip);color:var(--chipink);border:2px solid var(--chipink);font-size:12px;font-weight:bold;
+  padding:5px 12px;border-radius:999px}
+.note{border:2px solid var(--ink);border-radius:12px;padding:10px 12px;font-size:13px;color:var(--ink);background:var(--panel)}
+.note.warn{border-color:#e5484d;background:rgba(229,72,77,.08)}
+.foot{text-align:center;margin-top:18px;font-size:12px;color:var(--accent);font-weight:bold}
+.progress{display:flex;gap:4px;justify-content:center;margin-top:6px}
+.pb{width:16px;height:8px;border:2px solid var(--ink);border-radius:3px}
+.pb.on{background:var(--accent2)}
+</style></head><body>
+<div class="win">
+  <div class="bar"><div class="dots"><div class="dot p"></div><div class="dot y"></div><div class="dot g"></div></div><div class="t">boo_basket.exe</div></div>
+  <div class="inner">
+    <div class="eyebrow">🎃 Boo Basket Exchange 🎃</div>
+    <div class="name"><div class="lbl">You are making a basket for</div><div class="who">Heather K. 💌</div></div>
+    <div class="sec"><div class="lbl">Treat Preferences</div>
+      <div class="chips"><span class="chip">Sour Candy</span><span class="chip">Cozy &amp; Self-Care</span><span class="chip">Spooky Stuff</span><span class="chip">Candles</span></div></div>
+    <div class="sec"><div class="lbl">⚠ Avoid</div><div class="note warn">Cinnamon allergy — no cinnamon brooms!</div></div>
+    <div class="sec"><div class="lbl">Notes</div><div class="note">Majority spooky or marvel themed please!</div></div>
+    <div class="foot">loading cuteness…</div>
+    <div class="progress"><div class="pb on"></div><div class="pb on"></div><div class="pb on"></div><div class="pb on"></div><div class="pb"></div></div>
+  </div>
+</div>
+</body></html>
