@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🎃 Boo Basket Card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7e8ef; --bg2:#fbd3e0;
+  --win:#fff7f9; --titlebar:#f9a8c9; --titlebar-text:#5c1f3a;
+  --ink:#4a2340; --muted:#9a6d8a;
+  --chip:#ffe3ef; --chip-text:#8a2d5c;
+  --chip2:#e6f4ea; --chip2-text:#2e6b3f;
+  --border:#3a1f30;
+  --shadow:6px 6px 0 rgba(58,31,48,.18);
+}
+@media (prefers-color-scheme: dark){
+:root{
+  --bg:#1b1024; --bg2:#2a1436;
+  --win:#2d1b3a; --titlebar:#7a2f52; --titlebar-text:#ffe3ef;
+  --ink:#fdeef5; --muted:#c39ab8;
+  --chip:#3f2140; --chip-text:#ffb7d9;
+  --chip2:#1f3a2a; --chip2-text:#9fe8bb;
+  --border:#0e0614;
+  --shadow:6px 6px 0 rgba(0,0,0,.45);
+}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;
+  font-family:'Nunito',sans-serif;color:var(--ink);
+  background:
+    radial-gradient(circle at 20% 15%, rgba(249,168,201,.35) 0 120px, transparent 140px),
+    radial-gradient(circle at 85% 80%, rgba(255,214,130,.28) 0 140px, transparent 160px),
+    linear-gradient(160deg,var(--bg),var(--bg2));}
+.win{max-width:360px;width:100%;border:3px solid var(--border);border-radius:14px;background:var(--win);box-shadow:var(--shadow);overflow:hidden}
+.titlebar{display:flex;align-items:center;gap:8px;padding:9px 12px;background:var(--titlebar);color:var(--titlebar-text);border-bottom:3px solid var(--border)}
+.dots{display:flex;gap:5px}
+.dot{width:9px;height:9px;border-radius:50%;border:2px solid var(--titlebar-text)}
+.title{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.9}
+.body{padding:22px 20px 26px}
+.eyebrow{text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:6px}
+.name{text-align:center;font-family:'Fredoka',sans-serif;font-size:30px;font-weight:600;margin:0 0 4px}
+.sec{margin-top:18px}
+.label{font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:var(--muted);margin-bottom:7px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{padding:5px 11px;border:2px solid var(--border);border-radius:999px;background:var(--chip);color:var(--chip-text);font-size:12.5px;font-weight:700;box-shadow:2px 2px 0 var(--border)}
+.chip.alt{background:var(--chip2);color:var(--chip2-text)}
+.note{padding:10px 12px;border:2px solid var(--border);border-radius:10px;background:var(--chip);font-size:13.5px;font-weight:700;box-shadow:2px 2px 0 var(--border)}
+.foot{text-align:center;margin-top:22px;font-size:13px;font-weight:700;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="win">
+  <div class="titlebar">
+    <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <span class="title">boo_basket.exe</span>
+  </div>
+  <div class="body">
+    <p class="eyebrow">🎃 Making a basket for</p>
+    <h1 class="name">Kshante Minter</h1>
+    <div class="sec">
+      <div class="label">Loves</div>
+      <div class="chips"><span class="chip">Cozy &amp; Self-Care</span><span class="chip">Socks</span><span class="chip">Candles</span><span class="chip">Sweet stuff</span><span class="chip">Beauty &amp; Girly</span><span class="chip">Home</span><span class="chip">Creative</span></div>
+    </div>
+    
+    <div class="sec"><div class="label">Notes</div><div class="note">Just have fun 👻🙃</div></div>
+    <p class="foot">Happy haunting! 👻</p>
+  </div>
+</div>
+</body>
+</html>
